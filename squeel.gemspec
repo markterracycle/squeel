@@ -10,6 +10,7 @@ Gem::Specification.new do |s|
   s.email       = ["ernie@erniemiller.org", "bigxiang@gmail.com"]
   s.homepage    = "https://github.com/ernie/squeel"
   s.summary     = %q{Active Record, improved.}
+  s.license     = "Nonstandard"
   s.description = %q{
       Squeel unlocks the power of Arel in your Rails application with
       a handy block-based syntax. You can write subqueries, access named
@@ -20,15 +21,15 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'activerecord', '5.0.0'
   s.add_dependency 'activesupport', '5.0.0'
-  s.add_dependency 'polyamorous', '~> 1.3.1'
+  s.add_dependency 'polyamorous', '1.3'
   s.add_development_dependency 'rspec', '~> 3.7'
   s.add_development_dependency 'faker', '~> 0.9.5'
-  s.add_development_dependency 'sqlite3', '~> 1.3.3'
-  s.add_development_dependency 'mysql', '~> 2.9.1'
+  s.add_development_dependency 'sqlite3', '1.3'
+  s.add_development_dependency 'mysql', '2.9'
   s.add_development_dependency 'mysql2', '~> 0.3.16'
   s.add_development_dependency 'pg', '~> 0.17.1'
   s.add_development_dependency 'git_pretty_accept', '~> 0.4.0'
-  s.add_development_dependency 'pry'
+  s.add_development_dependency 'pry', '0.11'
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
